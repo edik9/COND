@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="assets/css/normalize.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/scss/style.scss" />
+
+		<!--ШРИФТЫ-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Russo+One&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
+			rel="stylesheet"
+		/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>YUMMY&ТОЧКА</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!--НАВИГАЦИОННАЯ ПАНЕЛЬ-->
+			<header class="header">
+				<div class="header__container">
+					<!--БУРГЕР-->
+					<div class="header__burger">
+						<img src="assets/images/Group.svg" alt="#" />
+					</div>
+
+					<!--МЕНЮ-->
+					<div class="header__menu">
+						<!--ЛОГОТИП-->
+						<div class="header__logo logo">
+							<a class="logo__link" href="#">
+								<img src="assets/images/logo.svg" alt="" />
+							</a>
+						</div>
+						<!--НАВИГАЦИЯ-->
+						<div class="header__nav nav">
+							<ul class="nav__items">
+								<li class="nav__item nav__item--active">
+									<a class="list__link" href="#home">ГЛАВНАЯ</a>
+								</li>
+								<li class="nav__item">
+									<a class="list__link" href="#about">О НАС</a>
+								</li>
+								<li class="nav__item">
+									<a class="list__link" href="#catalog">КАТАЛОГ</a>
+								</li>
+								<li class="nav__item">
+									<a class="list__link" href="#">ДОСТАВКА</a>
+								</li>
+								<li class="nav__item">
+									<a class="list__link" href="#contacts">КОНТАКТЫ</a>
+								</li>
+								<li class="nav__item">
+									<a href="#">ЗАКАЗАТЬ ТОРТ</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--КОНТАКТЫ-->
+					<div class="header__contact contact">
+						<!--ТЕЛЕФОН-->
+						<div class="contact__item">
+							<div class="contact__icon-wrap">
+								<div class="contact__icon">
+									<img src="assets/images/tel.svg" alt="" />
+								</div>
+							</div>
+							<div class="contact__text">8(9ХХ)-ХХХ-ХХ-ХХ</div>
+						</div>
+
+						<!--АДРЕС-->
+						<div class="contact__item">
+							<div class="contact__icon-wrap">
+								<div class="contact__icon">
+									<img src="assets/images/gps.svg" alt="" />
+								</div>
+							</div>
+							<div class="contact__text">г. НеКалининград</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!--КНОПКА ВВЕРХ-->
+			<div class="btn-up">
+				<a href="#home">
+					<div class="btn-up__icon">
+						<img src="assets/images/up.svg" alt="" />
+					</div>
+				</a>
+			</div>
+
+			<!--ГЛАВНВАЯ СТРАНИЦА-->
+			<section class="home" id="home">
+				<div class="home__container">
+					<!--1 БЛОК-->
+					<div class="home__block home__block1">
+						<div class="home__wrap">
+							<div class="home__title">
+								<h1>YUMMY И ТОЧКА</h1>
+							</div>
+						</div>
+
+						<div class="home__slogan">
+							<img src="assets/images/slogan.svg" alt="" />
+							<div class="home__desc">
+								Нежные десерты для изысканных моментов!
+							</div>
+						</div>
+					</div>
+
+					<!--2 БЛОК-->
+					<div class="home__block home__block2">
+						<div class="home__sales sales">
+							<div class="sales__icon">
+								<img src="assets/images/sales.svg" alt="" />
+							</div>
+							<div class="sales__desc">
+								скидка <span class="desc__text1">25%</span> каждый день с
+								<span class="desc__text2">18:00</span> до
+								<span class="desc__text2">20:00</span> на некоторые виды
+								пирожных, печенье и выпечку!
+							</div>
+						</div>
+
+						<div class="home__info info">
+							<div class="info__title">ПОЧЕМУ СТОИТ ВЫБИРАТЬ ИМЕННО НАС?</div>
+							<!--1 блок-->
+							<div class="info__item">
+								<div class="info__icon-wrap">
+									<div class="info__icon">
+										<img src="assets/images/yummy.svg" alt="" />
+									</div>
+								</div>
+								<div class="info__text">
+									<div class="info__subtitle">ВКУСНО</div>
+									<div class="info__desc">
+										У нас широкий оригинальный ассортимент и тщательно
+										разработанная рецептура
+									</div>
+								</div>
+							</div>
+							<!--2 блок-->
+							<div class="info__item">
+								<div class="info__icon-wrap">
+									<div class="info__icon">
+										<img src="assets/images/time.svg" alt="" />
+									</div>
+								</div>
+								<div class="info__text">
+									<div class="info__subtitle">БЫСТРО</div>
+									<div class="info__desc">
+										Изготовим любой заказ сроком от 24 часов
+									</div>
+								</div>
+							</div>
+							<!--3 блок-->
+							<div class="info__item">
+								<div class="info__icon-wrap">
+									<div class="info__icon">
+										<img src="assets/images/natur.svg" alt="" />
+									</div>
+								</div>
+								<div class="info__text">
+									<div class="info__subtitle">НАТУРАЛЬНО</div>
+									<div class="info__desc">
+										Мы используем только натуральные ингредиенты ручной работы
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--РАЗДЕЛ "О НАС" -->
+			<section class="about" id="about">
+				<div class="about__container">
+					<div class="about__title">О НАС</div>
+					<div class="about__wrap">
+						<!--1 БЛОК-->
+						<div class="about__block">
+							<!--контроль-->
+							<div class="about__box box">
+								<div class="box__wrap">
+									<div class="box__icon-wrap">
+										<div class="box__icon">
+											<img src="assets/images/control.svg" alt="" />
+										</div>
+									</div>
+									<div class="box__subtitle">КОНТРОЛЬ</div>
+								</div>
+								<div class="box__desc">
+									Формат частной кондитерской позволяет нам удачно сочетать
+									строжайшее соблюдение санитарных норм и контроля за качеством
+									продукции
+								</div>
+							</div>
+							<!--индивидуальность-->
+							<div class="about__box box">
+								<div class="box__wrap">
+									<div class="box__icon-wrap">
+										<div class="box__icon">
+											<img src="assets/images/indiv.svg" alt="" />
+										</div>
+									</div>
+									<div class="box__subtitle">ИНДИВИДУАЛЬНОСТЬ</div>
+								</div>
+								<div class="box__desc">
+									Мы располагаем возможностью изготовления нестандартных
+									кондитерских изделий любой сложности по желанию клиента
+								</div>
+							</div>
+						</div>
+						<!--2 БЛОК-->
+						<div class="about__block">
+							<div class="about__block-text">
+								Мы - небольшая кондитерская. Наша команда - группа талантливых и
+								творческих людей, которые с радостью делятся своими сладкими
+								шедеврами с вами. <br /><br />
+								Мы стремимся создать десерты, которые порадуют ваш вкус и
+								взгляд. Каждый наш торт или пирожное - это маленький кусочек
+								радости, который мы с удовольствием готовим для вас. <br />
+								<br />
+								Наша кондитерская - место, где вы можете насладиться
+								натуральными ингредиентами, свежими рецептами и приятной
+								атмосферой. <br />
+								<br />
+								Добро пожаловать в нашу маленькую уютную кондитерскую, где
+								каждый десерт готовится с улыбкой и с любовью к деталям. Мы
+								готовы удивлять вас сладкими находками каждый день!
+							</div>
+						</div>
+						<!--3 БЛОК-->
+						<div class="about__block">
+							<!--качество-->
+							<div class="about__box box">
+								<div class="box__wrap">
+									<div class="box__icon-wrap">
+										<div class="box__icon">
+											<img src="assets/images/kach.svg" alt="" />
+										</div>
+									</div>
+									<div class="box__subtitle">КАЧЕСТВО</div>
+								</div>
+								<div class="box__desc">
+									Мы используем только натуральные продукты фермерских хозяйств.
+									Категорически отказываемся от химических красителей и
+									консервантов
+								</div>
+							</div>
+							<!--разнообразие-->
+							<div class="about__box box">
+								<div class="box__wrap">
+									<div class="box__icon-wrap">
+										<div class="box__icon">
+											<img src="assets/images/raznoob.svg" alt="" />
+										</div>
+									</div>
+									<div class="box__subtitle">РАЗНООБРАЗИЕ</div>
+								</div>
+								<div class="box__desc">
+									Представляем широкий ассортимент десертов для людей
+									придерживающихся безглютеновой и низкокалорийной диеты и
+									вегетарианцев
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--КАТАЛОГ-->
+			<section class="catalog" id="catalog">
+				<div class="catalog__container">
+					<div class="catalog__title">КАТАЛОГ</div>
+					<div class="catalog__wrap">
+						<!--1 БЛОК-->
+						<div class="catalog__block catalog__block-sections">
+							<div class="catalog__box">
+								<div class="catalog__back-image">
+									<img src="assets/images/cakes.png" alt="" />
+								</div>
+								<div class="catalog__subtitle">ТОРТЫ</div>
+							</div>
+							<div class="catalog__box">
+								<div class="catalog__back-image">
+									<img src="assets/images/bar.png" alt="" />
+								</div>
+								<div class="catalog__subtitle">КЕНДИ БАР</div>
+							</div>
+							<div class="catalog__box">
+								<div class="catalog__back-image">
+									<img src="assets/images/deserts 8.png" alt="" />
+								</div>
+								<div class="catalog__subtitle">ДЕСЕРТЫ</div>
+							</div>
+							<div class="catalog__box">
+								<div class="catalog__back-image">
+									<img src="assets/images/vipechka.png" alt="" />
+								</div>
+								<div class="catalog__subtitle">ВЫПЕЧКА</div>
+							</div>
+							<div class="catalog__box">
+								<div class="catalog__back-image">
+									<img src="assets/images/drincks.png" alt="" />
+								</div>
+								<div class="catalog__subtitle">НАПИТКИ</div>
+							</div>
+							<div class="catalog__box">
+								<div class="catalog__back-image">
+									<img src="assets/images/raznoe.png" alt="" />
+								</div>
+								<div class="catalog__subtitle">РАЗНОЕ</div>
+							</div>
+						</div>
+						<!--2 БЛОК-->
+						<div class="catalog__block">
+							<div class="more">
+								<div class="more__wrap">
+									<div class="more__icon1">
+										<img src="assets/images/car.svg" alt="" />
+									</div>
+									<div class="more__subtitle">БЕСПЛАТНАЯ <br />ДОСТАВКА</div>
+								</div>
+								<div class="more__desc1">
+									*от 3 кг по городу с 10:00 до 17:00
+								</div>
+								<div class="more__btn">
+									<button>ПОДРОБНЕЕ <br />О ДОСТАВКЕ</button>
+								</div>
+								<div class="more__icon2">
+									<img src="assets/images/more.svg" alt="" />
+								</div>
+								<div class="more__desc2">
+									приводи друзей и получай бонусы!!!
+								</div>
+								<div class="more__link">
+									<a href="#">подробнее...</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--КОНТАКТЫ-->
+			<section class="contacts" id="contacts">
+				<div class="contacts__container">
+					<div class="contacts__title">КАК С НАМИ СВЯЗАТЬСЯ</div>
+					<div class="contacts__wrap">
+						<!--1 БЛОК-->
+						<div class="contacts__block connection">
+							<div class="connection__wrap">
+								<!--адрес-->
+								<div class="connection__item">
+									<div class="connection__icon">
+										<img src="assets/images/adres-icon.svg" alt="" />
+									</div>
+									<div class="connection__text">
+										<div class="connection__title">АДРЕС:</div>
+										<div class="connection__desc">
+											ул. Непридуманная д. 102Б г. Предположительно-Калининград
+										</div>
+									</div>
+								</div>
+								<!--время работы-->
+								<div class="connection__item">
+									<div class="connection__icon">
+										<img src="assets/images/calendar.svg" alt="" />
+									</div>
+									<div class="connection__text">
+										<div class="connection__title">ВРЕМЯ РАБОТЫ:</div>
+										<div class="connection__desc">
+											<b>ПН-ПТ:</b> 08:00 — 20:00 <br />
+											<b>СБ-ВС:</b> 09:00 — 19:00
+										</div>
+									</div>
+								</div>
+								<!--контакты-->
+								<div class="connection__item">
+									<div class="connection__icon">
+										<img src="assets/images/contacts-icon.svg" alt="" />
+									</div>
+									<div class="connection__text">
+										<div class="connection__title">КОНТАКТЫ:</div>
+										<div class="connection__desc">
+											<b>НОМЕР ТЕЛЕФОНА:</b> 8(9ХХ)-ХХХ-ХХ-ХХ <br />
+											<b>НАШИ МЕССЕНДЖЕРЫ И СОЦСЕТИ: </b>
+										</div>
+									</div>
+								</div>
+								<!--иконки мессенджеров-->
+								<div class="connection__messenger messenger">
+									<div class="messenger__icon">
+										<img src="assets/images/vk.svg" alt="" />
+									</div>
+									<div class="messenger__icon">
+										<img src="assets/images/tg.svg" alt="" />
+									</div>
+									<div class="messenger__icon">
+										<img src="assets/images/whp.svg" alt="" />
+									</div>
+									<div class="messenger__icon">
+										<img src="assets/images/inst.svg" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--2 БЛОК-->
+						<div class="contacts__block map">
+							<div class="map__card-wrap">
+								<iframe
+									class="map__card"
+									src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa7951c1cefc866d68b2ec5a30a16ed2b3f030c585942f988fc220c2c14726cc4&amp;source=constructor"
+									width="590"
+									height="470"
+									frameborder="0"
+								></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--------------------------------------------------------->
+			<!--ЗАКАЗ-->
+			<!-- <div class="order">
+				<div class="order__container">
+					<div class="order__title">ЗАКАЗ И ДОСТАВКА</div>
+					<div class="order__text">
+						Минимальный вес заказного торта: 2 кг. <br />
+						При оформлении торта на заказ, предоплата - 50% <br />
+						Заказы принимаем за 1-2 дня, сложный за 3-5 дней до мероприятия
+						<br />
+						Заказы на тематические торты со сложным декором принимаются за 5
+						дней <br />
+						Заказы принимаем по звонку на номер 8(9ХХ)-ХХХ-ХХ-ХХ или в
+						WhatsApp/Viber/Telegram, на тот же номер. <br />
+						Просим оформлять запрос в следующей форме: <br />
+						ваше имя; <br />
+						дата и время, в которое хотите получить торт;
+						<br />
+						требуемый вес (или количество гостей); <br />
+						необходимый декор или фото для примера. <br />
+						Все заявки обрабатываются с 9.00 до 20.00.Вы можете забронировать
+						или забрать стандартный торт, узнать про наличие по номеру
+						+7(906)238-61-01. <br />
+						Доставка работает с 08:00 до 20:00 <br />
+						Стоимость в пределах города от 300 руб. ( в область по
+						индивидуальному расчету) <br />
+						При заказе от 2500р Доставка по городу- БЕСПЛАТНО
+					</div>
+				</div>
+			</div> -->
+
+			<!--СОБЕРИ СВОЙ ТОРТ-->
+			<!-- <div class="cake-disign">
+				<div class="cake-disign__container">
+					<div class="cake-disign__title">СОБЕРИ СВОЙ ТОРТ</div>
+					<div class="cake-disign__desc">
+						стоимость заказного торта составляет 1400р за килограмм стоимость
+						заказного с декором торта составляет 1800р за килограмм (стоимость
+						торта со сложным декором рассчитывается индивидуально)
+					</div>
+					<div class="cake-disign__text-content text-content">
+						<div class="text-content__block">
+							<div class="text-content__title">Выберите основу торта</div>
+						</div>
+						<div class="text-content__block">
+							<div class="text-content__title">Какой примерный вес торта</div>
+							<div class="text-content__desc">
+								Если не знаете какой вам нужен вес, посчитайте из расчета 300
+								грамм на человека
+							</div>
+						</div>
+						<div class="text-content__block">
+							<div class="text-content__title">Дополнительная информация</div>
+						</div>
+						<div class="text-content__block">
+							<div class="text-content__title">
+								Укажите дату, когда вы хотите получить торт
+							</div>
+						</div>
+						<div class="text-content__block">
+							<div class="text-content__title">Способ получения</div>
+						</div>
+						<div class="text-content__block">
+							<div class="text-content__title">Доставка</div>
+							<div class="text-content__desc">По адресу</div>
+						</div>
+						<div class="text-content__block">
+							<div class="text-content__title">Самовывоз</div>
+							<div class="text-content__desc">По адресу</div>
+						</div>
+						<div class="text-content__block">
+							<div class="text-content__title">Ваше имя</div>
+						</div>
+						<div class="text-content__block">
+							<div class="text-content__title">Ваш телефон</div>
+						</div>
+					</div>
+					<div class="cake-disign__btn">
+						<button>ОТПРАВИТЬ</button>
+					</div>
+					<div class="cake-disign__desc">
+						Нажимая кнопку "Отправить", вы даете согласие на обработку своих
+						персональных данных.
+					</div>
+				</div>
+			</div> -->
+			<!--------------------------------------------------------->
+
+			<!--ПОДВАЛ-->
+			<footer class="footer">
+				<div class="footer__container">
+					<!--1 БЛОК-->
+					<div class="footer__block">
+						<!--логотип-->
+						<div class="footer__logo logo">
+							<a class="logo__link" href="#">
+								<img src="assets/images/logo.svg" alt="" />
+							</a>
+						</div>
+						<!--иконки мессенджеров-->
+						<div class="footer__messengers messengers">
+							<div class="messengers__icon">
+								<img src="assets/images/vk.svg" alt="" />
+							</div>
+							<div class="messengers__icon">
+								<img src="assets/images/tg.svg" alt="" />
+							</div>
+							<div class="messengers__icon">
+								<img src="assets/images/whp.svg" alt="" />
+							</div>
+							<div class="messengers__icon">
+								<img src="assets/images/inst.svg" alt="" />
+							</div>
+						</div>
+						<!--копирайт-->
+						<div class="footer__copyright">
+							Copyright ©edikoi <br />
+							Все права защищены <br />
+							2024 <br />
+							Y&T <br />
+							Разработка сайта - ED и компания
+						</div>
+					</div>
+					<!--2 БЛОК-->
+					<div class="footer__block column">
+						<div class="column__title">МЕНЮ</div>
+						<ul class="column__items">
+							<li class="column__item">
+								<a class="column__link" href="#home">Главная</a>
+							</li>
+							<li class="column__item">
+								<a class="column__link" href="#about">О нас</a>
+							</li>
+							<li class="column__item">
+								<a class="column__link" href="#catalog">Каталог</a>
+							</li>
+							<li class="column__item">
+								<a class="column__link" href="">Доставка</a>
+							</li>
+							<li class="column__item">
+								<a class="column__link" href="#contacts">Контакты</a>
+							</li>
+							<li class="column__item">
+								<a class="column__link" href="">Заказать торт</a>
+							</li>
+						</ul>
+					</div>
+					<!--3 БЛОК-->
+					<div class="footer__block column">
+						<div class="column__title">ВАЖНАЯ ИНФОРМАЦИЯ</div>
+						<ul class="column__items">
+							<li class="column__item">
+								<a class="column__link" href="">Вакансии</a>
+							</li>
+							<li class="column__item">
+								<a class="column__link" href="">Отзывы</a>
+							</li>
+							<li class="column__item">
+								<a class="column__link" href="">Реквизиты</a>
+							</li>
+							<li class="column__item">
+								<a class="column__link" href="">Сертификаты</a>
+							</li>
+							<li class="column__item">
+								<a class="column__link" href="">Об оплате</a>
+							</li>
+							<li class="column__item">
+								<a class="column__link" href="">Согласие на обработку данных</a>
+							</li>
+						</ul>
+					</div>
+					<!--4 БЛОК-->
+					<div class="footer__block column">
+						<div class="column__title">КОНТАКТЫ</div>
+						<div class="column__text text">
+							<div class="text__subtitle">АДРЕС</div>
+							<div class="text__desc">
+								ул. Непридуманная д. 102Б г. Предположительно-Калининград
+							</div>
+						</div>
+						<div class="column__text text">
+							<div class="text__subtitle">ВРЕМЯ РАБОТЫ</div>
+							<div class="text__desc">
+								ПН-ПТ: 08:00 — 20:00 <br />
+								СБ-ВС: 09:00 — 19:00
+							</div>
+						</div>
+						<div class="column__text text">
+							<div class="text__subtitle">ТЕЛЕФОН</div>
+							<div class="text__desc">8(9ХХ)-ХХХ-ХХ-ХХ</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>

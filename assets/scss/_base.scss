@@ -1,0 +1,136 @@
+/*ОБНУЛЯШКА*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 16px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/*ПЕРЕМЕННЫЕ*/
+$c1: #080303;
+$c2: #250404;
+$c3: #602121;
+$c4: #953f3f;
+$c5: #bf6868;
+$c6: #f7a8a6;
+$c7: #724d4d;
+$c8: #ffdada;
+$c9: #ffefef;
+$f1: 'Montserrat', sans-serif;
+$f2: 'Comfortaa', sans-serif;
+$f3: 'Amatic SC', sans-serif;
+$f4: 'Sofia Sans Condensed', sans-serif;
+$f5: 'Balsamiq Sans', sans-serif;
+$f6: 'Alegreya Sans SC', sans-serif;
+$f7: 'Russo One', sans-serif;
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #1d1c1c;
+	line-height: 1;
+	font-size: 16px;
+	background-color: $c1;
+
+	font-family: $f1;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+}
+.wrapper {
+	min-height: 100vh;
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: $c7;
+	background: linear-gradient(
+			135deg,
+			rgba(21, 14, 14, 0.6) 0%,
+			rgba(34, 16, 16, 0.5) 25%,
+			rgba(142, 71, 88, 0.3) 45%,
+			rgba(89, 42, 53, 0.4) 75%,
+			rgba(57, 29, 34, 0.5) 100%
+		),
+		url('../images/BAck.jpg') no-repeat fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+*[id]:before {
+	display: block;
+	content: ' ';
+	margin-top: -97px;
+	height: 97px;
+	visibility: hidden;
+	position: relative;
+	z-index: -1;
+}

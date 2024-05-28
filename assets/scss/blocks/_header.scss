@@ -1,0 +1,130 @@
+/*HEADER*/
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	min-height: 2em;
+	background-color: $c1;
+
+	&__container {
+		box-sizing: content-box;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 30px;
+		box-shadow: 1px 5px 60px $c1;
+	}
+	// -----------------------------------------------
+	&__burger {
+		cursor: pointer;
+		padding: 8px;
+		border-radius: 100%;
+		background-color: $c3;
+	}
+	&__burger img {
+		height: 30px;
+		width: 30px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	// -----------------------------------------------
+	&__logo {
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}
+// -----------------------------------------------
+.nav {
+	&__items {
+		display: flex;
+		flex-direction: row;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		font-family: $f5;
+		font-size: 12px;
+		font-weight: 500;
+	}
+	&__item:not(:last-child) {
+		margin: 0 15px 0 0;
+	}
+	&__item a {
+		color: $c8;
+	}
+	//------------------------------------------
+	&__item a:after {
+		display: block;
+		content: '';
+		height: 1px;
+		width: 0%;
+		margin-top: 2px;
+		background-color: $c6;
+		transition: width 0.4s ease-in-out;
+	}
+	&__item a:hover:after,
+	item a:focus:after {
+		width: 100%;
+	}
+	//------------------------------------------
+}
+
+.contact {
+	&__item {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+	}
+	&__item:not(:last-child) {
+		margin-bottom: 5px;
+	}
+	&__text {
+		font-family: $f3;
+		font-size: 20px;
+		color: $c9;
+	}
+	&__icon-wrap {
+		margin-right: 10px;
+	}
+	&__icon {
+		background-color: $c6;
+		padding: 3px;
+		border-radius: 100%;
+		cursor: pointer;
+	}
+}
+
+.logo {
+	&__link img {
+		max-width: 125px;
+	}
+}
+/*BUTTON-UP*/
+body {
+	position: absolute;
+}
+.btn-up {
+	position: sticky;
+	z-index: 3;
+	top: 92vh;
+	left: 94%;
+	margin-right: auto;
+	max-width: 50px;
+	opacity: 0.8;
+	&__icon {
+		cursor: pointer;
+		text-align: center;
+		align-items: center;
+		background-color: $c5;
+		border-radius: 100%;
+		height: 50px;
+		width: 50px;
+	}
+	&__icon img {
+		height: 40px;
+		width: 40px;
+	}
+}

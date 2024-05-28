@@ -1,0 +1,105 @@
+.footer {
+	background-color: $c1;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 150px;
+		padding: 40px;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+	&__block {
+		text-align: center;
+		max-width: 250px;
+	}
+	&__logo {
+		margin-bottom: 10px;
+		text-align: left;
+	}
+	&__messengers {
+		display: flex;
+		justify-content: space-between;
+		max-width: 100px;
+		align-items: start;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	&__copyright {
+		color: $c9;
+		text-align: left;
+		font-family: $f3;
+	}
+}
+.messengers {
+	&__icon {
+		background-color: $c5;
+		border-radius: 100%;
+		padding: 3px;
+		cursor: pointer;
+		transition: 1s;
+	}
+	&__icon:hover {
+		transition: 1s;
+		background-color: $c8;
+	}
+	&__icon img {
+		height: 15px;
+		width: 15px;
+	}
+}
+
+.column {
+	&__items {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	&__title {
+		color: $c8;
+		text-align: center;
+		margin-bottom: 10px;
+		font-weight: 700;
+		font-family: $f5;
+	}
+	&__link {
+		display: inline-block;
+		color: $c6;
+		font-size: 14px;
+		font-family: $f6;
+	}
+	&__item:not(:last-child) {
+		margin-bottom: 7px;
+	}
+	&__text:not(:last-child) {
+		margin-bottom: 10px;
+	}
+	&__item a:after {
+		display: block;
+		content: '';
+		height: 1px;
+		width: 0%;
+		margin-top: 2px;
+		background-color: $c6;
+		transition: width 0.4s ease-in-out;
+	}
+	&__item a:hover:after,
+	item a:focus:after {
+		width: 100%;
+	}
+}
+
+.text {
+	&__subtitle {
+		color: $c9;
+		font-weight: 500;
+		font-family: $f4;
+		margin-bottom: 5px;
+		font-size: 14px;
+	}
+	&__desc {
+		color: $c6;
+		font-family: $f4;
+		font-size: 14px;
+		font-style: oblique;
+	}
+}

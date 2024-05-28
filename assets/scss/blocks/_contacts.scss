@@ -1,0 +1,111 @@
+.contacts {
+	&__container {
+		margin-bottom: 150px;
+		padding: 40px;
+	}
+	&__title {
+		text-align: center;
+		font-size: 60px;
+		font-weight: 800;
+		font-family: $f3;
+		color: $c9;
+		padding-bottom: 40px;
+	}
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+	&__block {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+.connection {
+	max-width: 430px;
+	&__wrap {
+		background-color: $c7;
+		padding: 20px;
+		border-radius: 20px;
+		box-shadow: 3px 2px 10px $c1;
+	}
+	&__item {
+		display: flex;
+		justify-content: start;
+		margin-bottom: 15px;
+		gap: 20px;
+		align-items: center;
+	}
+	&__messenger {
+		display: flex;
+		justify-content: space-between;
+		max-width: 220px;
+		align-items: center;
+		text-align: center;
+		margin: 0 auto;
+	}
+	&__icon img {
+		height: 40px;
+		width: 40px;
+	}
+	&__title {
+		font-family: $f5;
+		font-weight: 600;
+		color: $c9;
+		padding-bottom: 5px;
+		font-size: 18px;
+	}
+	&__desc {
+		font-family: $f4;
+		font-weight: 300;
+		color: $c8;
+		line-height: 20px;
+		max-width: 330px;
+		font-size: 18px;
+	}
+}
+.messenger {
+	&__icon {
+		background-color: $c5;
+		padding: 7px;
+		border-radius: 100%;
+		cursor: pointer;
+		border: solid;
+		border-width: 1px;
+		border-color: $c6;
+		box-shadow: 2px 1px 15px $c4;
+		transition: 2s;
+	}
+	&__icon:hover {
+		background-color: $c8;
+		transition-duration: 1s;
+	}
+	&__icon img {
+		height: 30px;
+		width: 30px;
+	}
+}
+.map {
+	&__card-wrap {
+		box-shadow: 3px 2px 10px $c1;
+		background-color: $c6;
+		padding: 20px;
+		max-width: 500px;
+		border-radius: 20px;
+	}
+	&__card {
+		border-radius: 20px;
+		border: solid;
+		border-width: 3px;
+		border-color: $c8;
+		box-shadow: 2px 1px 15px $c4;
+		max-width: 500px;
+	}
+	&__card-wrap iframe {
+		max-width: 100%;
+		max-height: 400px;
+	}
+}
