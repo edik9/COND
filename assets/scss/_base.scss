@@ -75,15 +75,15 @@ h6 {
 }
 
 /*ПЕРЕМЕННЫЕ*/
-// $c1: #080303;
-// $c2: #250404;
-// $c3: #602121;
-// $c4: #953f3f;
-// $c5: #bf6868;
-// $c6: #f7a8a6;
-// $c7: #724d4d;
-// $c8: #ffdada;
-// $c9: #ffefef;
+$c1: #080303;
+$c2: #250404;
+$c3: #602121;
+$c4: #953f3f;
+$c5: #bf6868;
+$c6: #f7a8a6;
+$c7: #724d4d;
+$c8: #ffdada;
+$c9: #ffefef;
 $f3: 'Amatic SC', sans-serif;
 $f4: 'Sofia Sans Condensed', sans-serif;
 $f5: 'Balsamiq Sans', sans-serif;
@@ -91,15 +91,7 @@ $f6: 'Alegreya Sans SC', sans-serif;
 $f7: 'Russo One', sans-serif;
 
 :root {
-	$c1: #080303;
-	$c2: #250404;
-	$c3: #602121;
-	$c4: #953f3f;
-	$c5: #bf6868;
-	$c6: #f7a8a6;
-	$c7: #724d4d;
-	$c8: #ffdada;
-	$c9: #ffefef;
+	color-scheme: only light;
 }
 
 html {
