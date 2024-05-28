@@ -1,0 +1,27 @@
+{
+	"editor.formatOnPaste": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.useTabs": true,
+	"prettier.semi": false,
+	"prettier.jsxSingleQuote": true,
+	"prettier.singleQuote": true,
+	"prettier.arrowParens": "avoid",
+
+	"editor.wordWrap": "on",
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"editor.tabSize": 2,
+	"editor.formatOnSave": true,
+	"explorer.compactFolders": false,
+	"editor.smoothScrolling": true,
+	"workbench.list.smoothScrolling": true,
+	"terminal.integrated.smoothScrolling": true,
+	"editor.cursorBlinking": "expand",
+	"editor.cursorStyle": "line-thin",
+	"terminal.integrated.cursorBlinking": true,
+	"editor.glyphMargin": false,
+	"editor.linkedEditing": true,
+	"editor.padding.top": 15,
+	"liveServer.settings.port": 5501
+}
