@@ -94,18 +94,6 @@ $f7: 'Russo One', sans-serif;
 	color-scheme: only light;
 }
 
-@media (prefers-color-scheme: dark) {
-	$c1: #080303;
-	$c2: #250404;
-	$c3: #602121;
-	$c4: #953f3f;
-	$c5: #bf6868;
-	$c6: #f7a8a6;
-	$c7: #724d4d;
-	$c8: #ffdada;
-	$c9: #ffefef;
-}
-
 html {
 	scroll-behavior: smooth;
 }
@@ -147,4 +135,30 @@ body {
 	visibility: hidden;
 	position: relative;
 	z-index: -1;
+}
+//-----------------------
+@media (prefers-color-scheme: dark) {
+	.wrapper {
+		background-color: $c7;
+		background: linear-gradient(
+				135deg,
+				rgba(21, 14, 14, 0.6) 0%,
+				rgba(34, 16, 16, 0.5) 25%,
+				rgba(142, 71, 88, 0.3) 45%,
+				rgba(89, 42, 53, 0.4) 75%,
+				rgba(57, 29, 34, 0.5) 100%
+			),
+			url('../images/BAck.jpg') no-repeat fixed;
+		background-position: center;
+		background-size: cover;
+	}
+	.home {
+		&__wrap {
+			box-shadow: 5px 5px 30px $c1;
+			background-color: $c3;
+		}
+		&__title {
+			background-color: $c4;
+		}
+	}
 }
