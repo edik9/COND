@@ -94,6 +94,18 @@ $f7: 'Russo One', sans-serif;
 	color-scheme: only light;
 }
 
+@media (prefers-color-scheme: dark) {
+	$c1: #080303;
+	$c2: #250404;
+	$c3: #602121;
+	$c4: #953f3f;
+	$c5: #bf6868;
+	$c6: #f7a8a6;
+	$c7: #724d4d;
+	$c8: #ffdada;
+	$c9: #ffefef;
+}
+
 html {
 	scroll-behavior: smooth;
 }
