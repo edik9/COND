@@ -54,10 +54,10 @@
 									<a class="list__link" href="#catalog">КАТАЛОГ</a>
 								</li>
 								<li class="nav__item">
-									<a class="list__link" href="#">ДОСТАВКА</a>
+									<a class="list__link" href="#contacts">КОНТАКТЫ</a>
 								</li>
 								<li class="nav__item">
-									<a class="list__link" href="#contacts">КОНТАКТЫ</a>
+									<a class="list__link" href="#">ДОСТАВКА</a>
 								</li>
 								<li class="nav__item">
 									<a href="#">ЗАКАЗАТЬ ТОРТ</a>
@@ -70,21 +70,21 @@
 					<div class="header__contact contact">
 						<!--ТЕЛЕФОН-->
 						<div class="contact__item">
-							<div class="contact__icon-wrap">
+							<a class="contact__icon-wrap" href="#contacts">
 								<div class="contact__icon">
 									<img src="assets/images/tel.svg" alt="" />
 								</div>
-							</div>
+							</a>
 							<div class="contact__text">8(9ХХ)-ХХХ-ХХ-ХХ</div>
 						</div>
 
 						<!--АДРЕС-->
 						<div class="contact__item">
-							<div class="contact__icon-wrap">
+							<a class="contact__icon-wrap" href="#contacts">
 								<div class="contact__icon">
 									<img src="assets/images/gps.svg" alt="" />
 								</div>
-							</div>
+							</a>
 							<div class="contact__text">г. НеКалининград</div>
 						</div>
 					</div>
@@ -436,7 +436,7 @@
 
 			<!--------------------------------------------------------->
 			<!--ЗАКАЗ-->
-			<!-- <div class="order">
+			<div class="order">
 				<div class="order__container">
 					<div class="order__title">ЗАКАЗ И ДОСТАВКА</div>
 					<div class="order__text">
@@ -463,10 +463,10 @@
 						При заказе от 2500р Доставка по городу- БЕСПЛАТНО
 					</div>
 				</div>
-			</div> -->
+			</div>
 
 			<!--СОБЕРИ СВОЙ ТОРТ-->
-			<!-- <div class="cake-disign">
+			<div class="cake-disign">
 				<div class="cake-disign__container">
 					<div class="cake-disign__title">СОБЕРИ СВОЙ ТОРТ</div>
 					<div class="cake-disign__desc">
@@ -519,7 +519,7 @@
 						персональных данных.
 					</div>
 				</div>
-			</div> -->
+			</div>
 			<!--------------------------------------------------------->
 
 			<!--ПОДВАЛ-->
@@ -630,6 +630,17 @@
 			</footer>
 		</div>
 
+		<script type="text/javascript">
+			document.ondragstart = noselect
+
+			document.onselectstart = noselect
+
+			document.oncontextmenu = noselect
+
+			function noselect() {
+				return false
+			}
+		</script>
 		<script src="assets/js/script.js"></script>
 	</body>
 </html>

@@ -84,6 +84,7 @@ $c6: #f7a8a6;
 $c7: #724d4d;
 $c8: #ffdada;
 $c9: #ffefef;
+
 $f3: 'Amatic SC', sans-serif;
 $f4: 'Sofia Sans Condensed', sans-serif;
 $f5: 'Balsamiq Sans', sans-serif;
@@ -94,23 +95,16 @@ html {
 	scroll-behavior: smooth;
 }
 
-* {
-	color: inherit;
-	background-color: inherit;
-}
-
 body {
-	forced-color-adjust: none;
-
 	background-color: #1d1c1c;
 	line-height: 1;
 	font-size: 16px;
 	background-color: $c1;
-
-	font-family: $f1;
+	font-family: $f4;
 	font-optical-sizing: auto;
 	font-weight: 300;
 	font-style: normal;
+	overflow-x: hidden;
 }
 .wrapper {
 	min-height: 100vh;
@@ -139,4 +133,3 @@ body {
 	position: relative;
 	z-index: -1;
 }
-//-----------------------

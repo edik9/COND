@@ -102,6 +102,7 @@
 		max-width: 125px;
 	}
 }
+
 /*BUTTON-UP*/
 body {
 	position: absolute;
@@ -113,8 +114,10 @@ body {
 	left: 94%;
 	margin-right: auto;
 	max-width: 50px;
-	opacity: 0.8;
+	opacity: 0.5;
+	transition: 1s;
 	&__icon {
+		box-shadow: 3px 2px 8px $c2;
 		cursor: pointer;
 		text-align: center;
 		align-items: center;
@@ -127,4 +130,8 @@ body {
 		height: 40px;
 		width: 40px;
 	}
+}
+.btn-up:hover {
+	opacity: 1;
+	transition: 1s;
 }

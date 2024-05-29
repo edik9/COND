@@ -2,7 +2,7 @@
 	&__container {
 		background-color: $c1;
 		margin-bottom: 150px;
-		padding: 40px;
+		padding: 40px 30px;
 	}
 	&__title {
 		text-align: center;
@@ -27,7 +27,6 @@
 	}
 	&__block-text {
 		color: $c6;
-		// max-width: 1600px;
 		text-align: center;
 		font-weight: 800;
 		font-family: $f3;
@@ -75,6 +74,5 @@
 		font-size: 16px;
 		font-family: $f4;
 		padding-left: 5px;
-		// margin-left: 50px;
 	}
 }
