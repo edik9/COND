@@ -71,14 +71,14 @@
 		width: 100%;
 	}
 	//------------------------------------------
-	&__item--active a:after {
-		display: block;
-		content: '';
-		height: 1px;
-		width: 100%;
-		margin-top: 2px;
-		background-color: $c6;
-	}
+	// &__item--active a:after {
+	// 	display: block;
+	// 	content: '';
+	// 	height: 1px;
+	// 	width: 100%;
+	// 	margin-top: 2px;
+	// 	background-color: $c6;
+	// }
 }
 
 .contact {
@@ -97,6 +97,11 @@
 	}
 	&__icon-wrap {
 		margin-right: 10px;
+		transition: 0.6s;
+	}
+	&__icon-wrap:active {
+		transform: scale(0.8);
+		transition-duration: 0.6s;
 	}
 	&__icon {
 		background-color: $c6;

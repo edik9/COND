@@ -91,6 +91,10 @@
 		transition-delay: 0.2s;
 		transition-timing-function: ease;
 	}
+	&__subtitle:active {
+		transform: scale(0.9);
+		transition: 0.5s;
+	}
 	//
 }
 .more {
@@ -146,17 +150,17 @@
 		color: $c9;
 		font-weight: 700;
 		font-family: $f4;
-		transition: 1s;
+		transition: 0.8s;
 	}
 	&__btn a {
 		color: $c9;
 	}
 	//------------
-	&__btn button:hover {
-		transition-duration: 1s;
+	&__btn button:active {
+		transition-duration: 0.8s;
 		box-shadow: 5px 4px 15px $c1;
 		background-color: $c3;
-		transform: scale(1.1);
+		transform: scale(0.8);
 	}
 	//
 	&__link {

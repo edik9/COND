@@ -83,6 +83,10 @@
 		background-color: $c8;
 		transition-duration: 1s;
 	}
+	&__icon:active {
+		transform: scale(0.8);
+		transition-duration: 0.8s;
+	}
 	&__icon img {
 		height: 30px;
 		width: 30px;
