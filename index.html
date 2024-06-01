@@ -494,70 +494,98 @@
 							заказного с декором торта составляет 1800р за килограмм (стоимость
 							торта со сложным декором рассчитывается индивидуально)
 						</div>
-						<div class="order__text-content text-content">
-							<div class="text-content__block">
-								<div class="text-content__title">Выберите основу торта</div>
-								<input type="text" />
-							</div>
-							<div class="text-content__block">
-								<div class="text-content__title">Какой примерный вес торта</div>
-								<div class="text-content__desc">
-									Если не знаете какой вам нужен вес, посчитайте из расчета 300
-									грамм на человека
+						<form action="#" method="get">
+							<div class="order__text-content text-content">
+								<div class="text-content__block">
+									<div class="text-content__title">Выберите основу торта</div>
+									<select name="mda" id="">
+										<option value="">начинка 1</option>
+										<option value="">начинка 2</option>
+										<option value="">начинка 3</option>
+										<option value="">начинка 4</option>
+										<option value="">начинка 5</option>
+										<option value="">начинка 6</option>
+										<option value="">начинка 7</option>
+										<option value="">начинка 8</option>
+										<option value="">начинка 9</option>
+										<option value="">начинка 10</option>
+									</select>
 								</div>
-								<input type="text" />
-							</div>
-							<div class="text-content__block">
-								<div class="text-content__title">Дополнительная информация</div>
-								<div class="text-content__desc">
-									Напишите дополнительную информацию про желаемый декор торта
-									или прикрепите фотографию для примера
+								<div class="text-content__block">
+									<div class="text-content__title">
+										Какой примерный вес торта
+									</div>
+									<div class="text-content__desc">
+										Если не знаете какой вам нужен вес, посчитайте из расчета
+										300 грамм на человека
+									</div>
+									<input type="text" />
 								</div>
-								<p><input type="text" /></p>
-								<p><input type="image" /></p>
-							</div>
-							<div class="text-content__block">
-								<div class="text-content__title">
-									Укажите дату и время, когда вы хотите получить торт
+								<div class="text-content__block">
+									<div class="text-content__title">
+										Дополнительная информация
+									</div>
+									<div class="text-content__desc">
+										Напишите дополнительную информацию про желаемый декор торта
+										или прикрепите фотографию для примера
+									</div>
+									<p><textarea name="text"></textarea></p>
+									<p><input type="file" /></p>
 								</div>
-								<div>
-									<p><input type="date" /></p>
-									<p><input type="time" /></p>
-								</div>
-							</div>
-							<div class="text-content__block">
-								<div class="text-content__title">Способ получения</div>
-								<div>
+								<div class="text-content__block">
+									<div class="text-content__title">
+										Укажите дату и время, когда вы хотите получить торт
+									</div>
 									<div>
-										<p><input type="radio" /></p>
-										<p><input type="radio" /></p>
+										<p><input type="date" /></p>
+										<p><input type="time" /></p>
 									</div>
 								</div>
+								<div class="text-content__block text-content__block-radio">
+									<div class="text-content__title">Способ получения</div>
+									<div>
+										<div>
+											<div class="text-content__radio">
+												<input
+													checked
+													type="radio"
+													name="get"
+													value="delivery"
+												/>
+												<p>Доставка</p>
+											</div>
+											<div class="text-content__radio">
+												<input type="radio" name="get" value="pickup" />
+												<p>Самовывоз</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="text-content__block">
+									<div class="text-content__title">Доставка</div>
+									<div class="text-content__desc">По адресу</div>
+									<input type="text" placeholder="Улица, дом, квартира" />
+								</div>
+								<!-- <div class="text-content__block">
+									<div class="text-content__title">Самовывоз</div>
+									<div class="text-content__desc">По адресу</div>
+									<input type="text" />
+								</div> -->
+								<div class="text-content__block">
+									<div class="text-content__title">Ваше имя</div>
+									<input type="text" placeholder="Ведите своё имя" />
+								</div>
+								<div class="text-content__block">
+									<div class="text-content__title">Ваш телефон</div>
+									<input type="tel" placeholder="Введите номер телефона" />
+								</div>
 							</div>
-							<div class="text-content__block">
-								<div class="text-content__title">Доставка</div>
-								<div class="text-content__desc">По адресу</div>
-								<input type="text" />
+							<div class="order__btn">
+								<button type="submit">ОТПРАВИТЬ</button>
+								<!-- <input type="reset" />
+								<input type="submit" /> -->
 							</div>
-							<div class="text-content__block">
-								<div class="text-content__title">Самовывоз</div>
-								<div class="text-content__desc">По адресу</div>
-								<input type="text" />
-							</div>
-							<div class="text-content__block">
-								<div class="text-content__title">Ваше имя</div>
-								<input type="text" />
-							</div>
-							<div class="text-content__block">
-								<div class="text-content__title">Ваш телефон</div>
-								<input type="tel" />
-							</div>
-						</div>
-						<div class="order__btn">
-							<button>ОТПРАВИТЬ</button>
-							<input type="reset" />
-							<input type="submit" />
-						</div>
+						</form>
 						<div class="order__desc">
 							Нажимая кнопку "Отправить", вы даете согласие на обработку своих
 							персональных данных.
