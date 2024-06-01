@@ -74,7 +74,7 @@
 		position: relative;
 		top: -55%;
 		left: 40px;
-		z-index: 40;
+		z-index: 10;
 		cursor: pointer;
 		border: solid;
 		border-color: $c2;
@@ -148,12 +148,14 @@
 		font-family: $f4;
 		transition: 1s;
 	}
+	&__btn a {
+		color: $c9;
+	}
 	//------------
 	&__btn button:hover {
 		transition-duration: 1s;
 		box-shadow: 5px 4px 15px $c1;
 		background-color: $c3;
-		color: $c9;
 		transform: scale(1.1);
 	}
 	//

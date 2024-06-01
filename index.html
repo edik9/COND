@@ -44,7 +44,7 @@
 						<!--НАВИГАЦИЯ-->
 						<div class="header__nav nav">
 							<ul class="nav__items">
-								<li class="nav__item nav__item--active">
+								<li class="nav__item">
 									<a class="list__link" href="#home">ГЛАВНАЯ</a>
 								</li>
 								<li class="nav__item">
@@ -57,10 +57,12 @@
 									<a class="list__link" href="#contacts">КОНТАКТЫ</a>
 								</li>
 								<li class="nav__item">
-									<a class="list__link" href="#">ДОСТАВКА</a>
+									<a class="list__link order-link" href="#order">ДОСТАВКА</a>
 								</li>
 								<li class="nav__item">
-									<a href="#">ЗАКАЗАТЬ ТОРТ</a>
+									<a class="list__link order-link" href="#order-2"
+										>ЗАКАЗАТЬ ТОРТ</a
+									>
 								</li>
 							</ul>
 						</div>
@@ -337,7 +339,11 @@
 									*от 3 кг по городу с 10:00 до 17:00
 								</div>
 								<div class="more__btn">
-									<button>ПОДРОБНЕЕ <br />О ДОСТАВКЕ</button>
+									<button>
+										<a class="order-link" href="order"
+											>ПОДРОБНЕЕ <br />О ДОСТАВКЕ</a
+										>
+									</button>
 								</div>
 								<div class="more__icon2">
 									<img src="assets/images/more.svg" alt="" />
@@ -435,88 +441,127 @@
 			</section>
 
 			<!--------------------------------------------------------->
-			<!--ЗАКАЗ-->
-			<div class="order">
+			<!--ЗАКАЗ ORDER-1-->
+			<div class="order" id="order">
 				<div class="order__container">
-					<div class="order__title">ЗАКАЗ И ДОСТАВКА</div>
-					<div class="order__text">
-						Минимальный вес заказного торта: 2 кг. <br />
-						При оформлении торта на заказ, предоплата - 50% <br />
-						Заказы принимаем за 1-2 дня, сложный за 3-5 дней до мероприятия
-						<br />
-						Заказы на тематические торты со сложным декором принимаются за 5
-						дней <br />
-						Заказы принимаем по звонку на номер 8(9ХХ)-ХХХ-ХХ-ХХ или в
-						WhatsApp/Viber/Telegram, на тот же номер. <br />
-						Просим оформлять запрос в следующей форме: <br />
-						ваше имя; <br />
-						дата и время, в которое хотите получить торт;
-						<br />
-						требуемый вес (или количество гостей); <br />
-						необходимый декор или фото для примера. <br />
-						Все заявки обрабатываются с 9.00 до 20.00.Вы можете забронировать
-						или забрать стандартный торт, узнать про наличие по номеру
-						+7(906)238-61-01. <br />
-						Доставка работает с 08:00 до 20:00 <br />
-						Стоимость в пределах города от 300 руб. ( в область по
-						индивидуальному расчету) <br />
-						При заказе от 2500р Доставка по городу- БЕСПЛАТНО
+					<div class="order__wrap">
+						<a class="order__close close-order" href="#header">
+							<img src="assets/images/Vector.svg" alt="" />
+						</a>
+						<div class="order__title">ЗАКАЗ И ДОСТАВКА</div>
+						<div class="order__text">
+							Минимальный вес заказного торта: <i>2 кг</i> <br />
+							При оформлении торта на заказ, предоплата - <i>50%</i> <br />
+							Заказы принимаем за <i>1-2 дня</i>, сложный за <i>3-5 дней</i> до
+							мероприятия
+							<br />
+							Заказы на тематические торты со сложным декором принимаются за
+							<i>5 дней</i> <br />
+							Заказы принимаем по звонку на номер <i>8(9ХХ)-ХХХ-ХХ-ХХ</i> или в
+							<i>WhatsApp/Viber/Telegram</i>, на тот же номер. <br /><br />
+							<div class="order__subtitle">
+								Просим оформлять запрос в следующей форме:
+							</div>
+							<span>●</span> ваше имя; <br />
+							<span>●</span> дата и время, в которое хотите получить торт;
+							<br />
+							<span>●</span> требуемый вес (или количество гостей); <br />
+							<span>●</span> необходимый декор или фото для примера.
+							<br /><br />
+							Все заявки обрабатываются <i>c 9.00 до 20.00</i>.Вы можете
+							забронировать или забрать стандартный торт, узнать про наличие по
+							номеру <br /><i>8(9ХХ)-ХХХ-ХХ-ХХ</i>. <br />
+							Доставка работает <i>c 08:00 до 20:00</i> <br />
+							Стоимость в пределах города <i>от 300 руб</i>. ( в область по
+							индивидуальному расчету) <br />
+							При заказе <i>от 2500р</i> Доставка по городу-
+							<span>БЕСПЛАТНО</span>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<!--СОБЕРИ СВОЙ ТОРТ-->
-			<div class="cake-disign">
-				<div class="cake-disign__container">
-					<div class="cake-disign__title">СОБЕРИ СВОЙ ТОРТ</div>
-					<div class="cake-disign__desc">
-						стоимость заказного торта составляет 1400р за килограмм стоимость
-						заказного с декором торта составляет 1800р за килограмм (стоимость
-						торта со сложным декором рассчитывается индивидуально)
-					</div>
-					<div class="cake-disign__text-content text-content">
-						<div class="text-content__block">
-							<div class="text-content__title">Выберите основу торта</div>
+			<!--СОБЕРИ СВОЙ ТОРТ ORDER-2-->
+			<div class="order" id="order-2">
+				<div class="order__container">
+					<div class="order__wrap">
+						<a class="order__close close-order" href="#header">
+							<img src="assets/images/Vector.svg" alt="" />
+						</a>
+						<div class="order__title">СОБЕРИ СВОЙ ТОРТ</div>
+						<div class="order__desc">
+							стоимость заказного торта составляет 1400р за килограмм стоимость
+							заказного с декором торта составляет 1800р за килограмм (стоимость
+							торта со сложным декором рассчитывается индивидуально)
 						</div>
-						<div class="text-content__block">
-							<div class="text-content__title">Какой примерный вес торта</div>
-							<div class="text-content__desc">
-								Если не знаете какой вам нужен вес, посчитайте из расчета 300
-								грамм на человека
+						<div class="order__text-content text-content">
+							<div class="text-content__block">
+								<div class="text-content__title">Выберите основу торта</div>
+								<input type="text" />
+							</div>
+							<div class="text-content__block">
+								<div class="text-content__title">Какой примерный вес торта</div>
+								<div class="text-content__desc">
+									Если не знаете какой вам нужен вес, посчитайте из расчета 300
+									грамм на человека
+								</div>
+								<input type="text" />
+							</div>
+							<div class="text-content__block">
+								<div class="text-content__title">Дополнительная информация</div>
+								<div class="text-content__desc">
+									Напишите дополнительную информацию про желаемый декор торта
+									или прикрепите фотографию для примера
+								</div>
+								<p><input type="text" /></p>
+								<p><input type="image" /></p>
+							</div>
+							<div class="text-content__block">
+								<div class="text-content__title">
+									Укажите дату и время, когда вы хотите получить торт
+								</div>
+								<div>
+									<p><input type="date" /></p>
+									<p><input type="time" /></p>
+								</div>
+							</div>
+							<div class="text-content__block">
+								<div class="text-content__title">Способ получения</div>
+								<div>
+									<div>
+										<p><input type="radio" /></p>
+										<p><input type="radio" /></p>
+									</div>
+								</div>
+							</div>
+							<div class="text-content__block">
+								<div class="text-content__title">Доставка</div>
+								<div class="text-content__desc">По адресу</div>
+								<input type="text" />
+							</div>
+							<div class="text-content__block">
+								<div class="text-content__title">Самовывоз</div>
+								<div class="text-content__desc">По адресу</div>
+								<input type="text" />
+							</div>
+							<div class="text-content__block">
+								<div class="text-content__title">Ваше имя</div>
+								<input type="text" />
+							</div>
+							<div class="text-content__block">
+								<div class="text-content__title">Ваш телефон</div>
+								<input type="tel" />
 							</div>
 						</div>
-						<div class="text-content__block">
-							<div class="text-content__title">Дополнительная информация</div>
+						<div class="order__btn">
+							<button>ОТПРАВИТЬ</button>
+							<input type="reset" />
+							<input type="submit" />
 						</div>
-						<div class="text-content__block">
-							<div class="text-content__title">
-								Укажите дату, когда вы хотите получить торт
-							</div>
+						<div class="order__desc">
+							Нажимая кнопку "Отправить", вы даете согласие на обработку своих
+							персональных данных.
 						</div>
-						<div class="text-content__block">
-							<div class="text-content__title">Способ получения</div>
-						</div>
-						<div class="text-content__block">
-							<div class="text-content__title">Доставка</div>
-							<div class="text-content__desc">По адресу</div>
-						</div>
-						<div class="text-content__block">
-							<div class="text-content__title">Самовывоз</div>
-							<div class="text-content__desc">По адресу</div>
-						</div>
-						<div class="text-content__block">
-							<div class="text-content__title">Ваше имя</div>
-						</div>
-						<div class="text-content__block">
-							<div class="text-content__title">Ваш телефон</div>
-						</div>
-					</div>
-					<div class="cake-disign__btn">
-						<button>ОТПРАВИТЬ</button>
-					</div>
-					<div class="cake-disign__desc">
-						Нажимая кнопку "Отправить", вы даете согласие на обработку своих
-						персональных данных.
 					</div>
 				</div>
 			</div>
@@ -571,13 +616,15 @@
 								<a class="column__link" href="#catalog">Каталог</a>
 							</li>
 							<li class="column__item">
-								<a class="column__link" href="">Доставка</a>
-							</li>
-							<li class="column__item">
 								<a class="column__link" href="#contacts">Контакты</a>
 							</li>
 							<li class="column__item">
-								<a class="column__link" href="">Заказать торт</a>
+								<a class="column__link order-link" href="#order">Доставка</a>
+							</li>
+							<li class="column__item">
+								<a class="column__link order-link" href="#order-2"
+									>Заказать торт</a
+								>
 							</li>
 						</ul>
 					</div>

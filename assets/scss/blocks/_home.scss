@@ -76,7 +76,7 @@
 		background-color: $c8;
 
 		animation-name: poehali;
-		animation-duration: 2s;
+		animation-duration: 1s;
 		animation-timing-function: ease-out;
 		animation-iteration-count: 1;
 		animation-fill-mode: forwards;
@@ -136,7 +136,7 @@
 		font-size: 24px;
 	}
 	animation-name: poehali2, slogan;
-	animation-duration: 2s, 3s;
+	animation-duration: 0.8s, 2s;
 	animation-timing-function: ease-out, ease-in-out;
 	animation-iteration-count: 1, infinite;
 	animation-fill-mode: forwards;
@@ -223,7 +223,7 @@
 		font-size: 18px;
 	}
 	animation-name: poehal2;
-	animation-duration: 2s;
+	animation-duration: 0.8s;
 	animation-timing-function: ease-out;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;

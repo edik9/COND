@@ -2,7 +2,7 @@
 .header {
 	position: sticky;
 	top: 0;
-	z-index: 50;
+	z-index: 20;
 	min-height: 2em;
 	background-color: $c1;
 
@@ -70,6 +70,14 @@
 		width: 100%;
 	}
 	//------------------------------------------
+	&__item--active a:after {
+		display: block;
+		content: '';
+		height: 1px;
+		width: 100%;
+		margin-top: 2px;
+		background-color: $c6;
+	}
 }
 
 .contact {
