@@ -193,6 +193,68 @@
 		align-items: baseline;
 		margin: 0 auto;
 	}
+	&__radio input::file-selector-button {
+		color: $c2;
+	}
+	&__file input::file-selector-button {
+		font-weight: bold;
+		color: $c8;
+		padding: 0.5em;
+		border: solid $c5;
+		border-radius: 15px;
+		background-color: $c5;
+		cursor: pointer;
+		box-shadow: 2px 1px 4px #953f3fbf;
+		transition: 0.7s;
+	}
+	&__file input::file-selector-button:active {
+		transform: scale(0.9);
+		transition: 0.7s;
+	}
+}
+//--------------------------------------
+.form_radio_btn {
+	display: inline-block;
+	margin-top: 5px;
+	margin-right: 10px;
+	font-family: $f6;
+	background-color: $c9;
+	border-radius: 25px;
+	font-weight: 500;
+	color: $c7;
+	box-shadow: 3px 2px 6px #953f3fbf;
+	transition: 0.5s;
+}
+.form_radio_btn input[type='radio'] {
+	display: none;
+	transition: 0.7s;
+}
+.form_radio_btn label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border: 1px solid $c5;
+	border-radius: 15px;
+	user-select: none;
+	transition: 0.7s;
+}
+
+/* Checked */
+.form_radio_btn input[type='radio']:checked + label {
+	background: $c5;
+	transition: 0.7s;
+	color: $c8;
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+	color: $c3;
+	transition: 0.7s;
+}
+.form_radio_btn:active {
+	transform: scale(0.9);
+	transition: 0.7s;
 }
 body.lock {
 	overflow: hidden;

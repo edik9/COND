@@ -495,11 +495,13 @@
 							<br />(стоимость торта со сложным декором рассчитывается
 							индивидуально)
 						</div>
-						<form action="#" method="get">
+
+
+						<form action="#" method="get" class="order__form form">
 							<div class="order__text-content text-content">
 								<div class="text-content__block">
 									<div class="text-content__title">Выберите основу торта</div>
-									<select name="mda" id="">
+									<select name="mda" id="" class="select">
 										<option value="">начинка 1</option>
 										<option value="">начинка 2</option>
 										<option value="">начинка 3</option>
@@ -531,7 +533,7 @@
 										или прикрепите фотографию для примера
 									</div>
 									<p><textarea name="text"></textarea></p>
-									<p><input type="file" /></p>
+									<p class="text-content__file"><input type="file" /></p>
 								</div>
 								<div class="text-content__block">
 									<div class="text-content__title">
@@ -546,7 +548,18 @@
 									<div class="text-content__title">Способ получения</div>
 									<div>
 										<div>
-											<div class="text-content__radio">
+
+
+											<div class="form_radio_btn">
+												<input id="radio-1" type="radio" name="radio" value="1" checked>
+												<label for="radio-1">Доставка</label>
+											</div>
+ 
+											<div class="form_radio_btn">
+												<input id="radio-2" type="radio" name="radio" value="2">
+												<label for="radio-2">Самовывоз</label>
+											</div>
+											<!-- <div class="text-content__radio">
 												<input
 													checked
 													type="radio"
@@ -558,7 +571,11 @@
 											<div class="text-content__radio">
 												<input type="radio" name="get" value="pickup" />
 												<p>Самовывоз</p>
-											</div>
+											</div> -->
+
+
+
+
 										</div>
 									</div>
 								</div>
@@ -594,6 +611,11 @@
 					</div>
 				</div>
 			</div>
+
+
+
+
+			
 
 			<!--ПРОСТО ТАК-->
 			<div class="order" id="order-3">
