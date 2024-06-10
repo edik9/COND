@@ -1,6 +1,6 @@
 // HOME
 .home {
-	height: 100vh;
+	// height: 100vh;
 	&__container {
 		display: flex;
 		justify-content: space-between;
@@ -35,14 +35,6 @@
 		// animation-iteration-count: 1;
 		// animation-fill-mode: forwards;
 	}
-	// @keyframes poehal {
-	// 	0% {
-	// 		left: -45%;
-	// 	}
-	// 	100% {
-	// 		left: 0;
-	// 	}
-	// }
 	&__block2 {
 		margin-left: auto;
 	}
@@ -61,7 +53,7 @@
 	&__slogan {
 		position: relative;
 		top: -15%;
-		right: 0%;
+		right: -25%;
 
 		max-width: 280px;
 		padding: 5px 10px;
@@ -75,24 +67,24 @@
 		font-weight: 500;
 		background-color: $c8;
 
-		animation-name: poehali;
-		animation-duration: 1s;
-		animation-timing-function: ease-out;
-		animation-iteration-count: 1;
-		animation-fill-mode: forwards;
+		// animation-name: poehali;
+		// animation-duration: 1s;
+		// animation-timing-function: ease-out;
+		// animation-iteration-count: 1;
+		// animation-fill-mode: forwards;
 	}
 	&__slogan img {
 		height: 50px;
 		margin-right: 15px;
 	}
-	@keyframes poehali {
-		0% {
-			right: 0%;
-		}
-		100% {
-			right: -25%;
-		}
-	}
+	// @keyframes poehali {
+	// 	0% {
+	// 		right: 0%;
+	// 	}
+	// 	100% {
+	// 		right: -25%;
+	// 	}
+	// }
 
 	&__desc {
 		font-family: $f3;
@@ -135,21 +127,12 @@
 		color: $c9;
 		font-size: 24px;
 	}
-	animation-name: poehali2, slogan;
-	animation-duration: 0.8s, 2s;
-	animation-timing-function: ease-out, ease-in-out;
-	animation-iteration-count: 1, infinite;
+	animation-name: slogan;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 	animation-fill-mode: forwards;
-	// animation-delay: 2s;
 }
-// @keyframes poehali2 {
-// 	0% {
-// 		left: 110%;
-// 	}
-// 	100% {
-// 		left: 0%;
-// 	}
-// }
 @keyframes slogan {
 	0% {
 		background-color: $c3;
@@ -222,17 +205,17 @@
 		font-family: $f4;
 		font-size: 18px;
 	}
-	animation-name: poehal2;
-	animation-duration: 0.8s;
-	animation-timing-function: ease-out;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
+	// animation-name: poehal2;
+	// animation-duration: 0.8s;
+	// animation-timing-function: ease-out;
+	// animation-iteration-count: 1;
+	// animation-fill-mode: forwards;
 }
-@keyframes poehal2 {
-	0% {
-		left: 45%;
-	}
-	100% {
-		left: 0;
-	}
-}
+// @keyframes poehal2 {
+// 	0% {
+// 		left: 45%;
+// 	}
+// 	100% {
+// 		left: 0;
+// 	}
+// }

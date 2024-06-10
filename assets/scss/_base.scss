@@ -108,7 +108,7 @@ body {
 }
 .wrapper {
 	min-height: 100vh;
-	max-width: 100%;
+	max-width: 1280px;
 	margin: 0 auto;
 	background-color: $c7;
 	background: linear-gradient(
@@ -132,4 +132,22 @@ body {
 	visibility: hidden;
 	position: relative;
 	z-index: -1;
+}
+
+@media (max-widht: 1280px) {
+	.wrapper {
+		max-width: 970px;
+	}
+}
+
+@media (max-widht: 992px) {
+	.wrapper {
+		max-width: 750px;
+	}
+}
+
+@media (max-widht: 767px) {
+	.wrapper {
+		max-width: none;
+	}
 }
